@@ -71,7 +71,8 @@ a:hover {
 }
 
 #logo img{
-	height: 122px;
+	max-height: 350px;
+	max-width: 100%;
 }
 
 #heading-details {
@@ -84,10 +85,10 @@ a:hover {
 	font-size: 17px;
 	border: 1px solid white;
 	border-radius: 2px;
-	width: 80%;
-	max-width: 300px;
 	position: relative;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(34, 34, 34, 0.75);
+	width: 100%;
+	max-width: 500px;
 }
 
 #emailBackground{
@@ -105,7 +106,7 @@ a:hover {
 	width: 100%;
 }
 
-#email input[type="email"]{
+#email input[type="email"], #email input[type="text"]{
 	background: white;
 	border-radius: 0;
 }
@@ -144,6 +145,7 @@ a:hover {
 	color: white;
 	font-weight: 700;
 	margin-bottom: 20px;
+	word-break: break-all;
 }
 
 .backgroundCreditPadding {

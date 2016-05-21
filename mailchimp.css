@@ -1,0 +1,9 @@
+#mc_embed_signup .mc-field-group div.mce_inline_error{
+	background: none;
+	color: rgb(255, 50, 50);
+	font-weight: bold;
+}
+
+#mc_embed_signup .mc-field-group input.mce_inline_error {
+	border: 1px solid #ccc;
+}

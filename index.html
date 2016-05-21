@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>HackTheMidlands 2016</title>
+	<!--<link rel="shortcut icon" href="images/favicon.png" type="image/png" />-->
 	
 	<meta charset="utf-8" />
 	<meta name="description" content="HackTheMidlands is a hackathon run by students in the city of Birmingham." />
@@ -9,9 +10,10 @@
 	<meta name="robots" content="index,follow" />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<!--<link rel="shortcut icon" href="images/favicon.png" type="image/png" />-->
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="mailchimp.css" type="text/css" />
 
 	<script src="jquery-1.12.0.min.js"></script>
 	<script src="index.js"></script>
@@ -19,10 +21,10 @@
 <body>
 	<div id="introSection" class="section">
 		<div id="logo">
-			<!-- <img src="images/banner.png" alt="HackTheMidlands"/> -->
+			<img src="images/logos/logo-full.png" alt="HackTheMidlands"/>
 		</div>
 		<div id="heading-details">
-			Birmingham, Autumn 2016
+			Birmingham, 2<sup>nd</sup> October 2016
 		</div>
 		<div id="email">
 			<div id="emailBackground"></div>
@@ -33,19 +35,19 @@
 							method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 					<div id="mc_embed_signup_scroll">
 						<div class="mc-field-group form-group">
-							<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
-							<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+							<label for="mce-EMAIL">Email Address</label>
+							<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Enter your email address">
 						</div>
 						<div class="mc-field-group form-group">
 							<label for="mce-FNAME">First Name </label>
-							<input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+							<input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="First Name">
 						</div>
 						<div class="mc-field-group form-group">
 							<label for="mce-LNAME">Last Name </label>
-							<input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
+							<input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME" placeholder="Last Name">
 						</div>
-						<div id="mce-responses" class="clear">
-							<div class="response" id="mce-error-response" style="display:none"></div>
+						<div id="mce-responses" class="clear" style="margin-bottom: 10px;">
+							<div class="response" id="mce-error-response" style="display:none; background: none; color: inherit; font-weight: normal;"></div>
 							<div class="response" id="mce-success-response" style="display:none"></div>
 						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ff010f3cac8581acf7a477049_b98088ff4b" tabindex="-1" value=""></div>
