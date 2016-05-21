@@ -1,7 +1,9 @@
 1. Set up a mail chimp account
-2. Set up registerEmail.php with the mailchip API 
+2. Set up mail chimp form
 3. Get a new logo/banner
 4. Get a new favicon
-5. Add info@hackthemidlands.com and sponsor@hackthemidlands.com and make them forward emails to our personal emails
+5. Add info@hackthemidlands.com and sponsor@hackthemidlands.com and make them forward emails to our personal emails	
 6. Check over all the under 18s stuff (including the message on the site about it)
 7. Add pictures to staff team
+8. Make sambahack redirect to hackthemidlands
+9. Verify hackthemidlands on mail chip- http://kb.mailchimp.com/accounts/account-setup/verify-a-domain
