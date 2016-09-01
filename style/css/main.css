@@ -314,7 +314,7 @@ a {
     margin: 100px; }
     #event-countdown .countdown #countdown {
       letter-spacing: 15px;
-      font-family: 'ingra, Arial';
+      font-family: 'ingra', sans-serif, Arial;
       font-size: 60px;
       font-weight: 400; }
     #event-countdown .countdown h2 {
