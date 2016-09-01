@@ -54,6 +54,9 @@
         img{
           width: 100%;
         }
+        #bcs{
+          width: 50%;
+        }
       }
     }
   }
@@ -91,5 +94,20 @@
   button:hover{
     background-color: rgba(0, 0, 0, 0.87);
     color: white;
+  }
+}
+
+@media screen and (max-width: 750px){
+  #bcs{
+    width: 60% !important;
+  }
+  .sponsor-icons{
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #bcs{
+    width: 80% !important;
   }
 }
