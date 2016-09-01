@@ -24,12 +24,18 @@
       width: auto;
       .nav-mobile{
         visibility: hidden;
-        width: 50px;
-        height: 50px;
-        background-color: black;
+        width: 30px;
+        height: 30px;
+        margin: 20px;
+        background-image: url('../../images/nav.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
         float: right;
         vertical-align: top;
         display: none;
+        position: relative;
+        z-index: 1000;
       }
     }
     a{

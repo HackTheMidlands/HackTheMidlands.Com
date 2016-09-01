@@ -29,6 +29,18 @@
     </head>
 
     <body>
+      <div class="nav-mobile-content-container">
+        <div id="mobile-close">
+            <h1 id="mobile-close">X</h1>
+        </div>
+        <div class="nav-mobile-content">
+            <a href="#event-info">Event Info</a>
+            <a href="#sponsors">Sponsors</a>
+            <a href="#team">Team</a>
+            <a href="https://www.eventbrite.co.uk/e/hackthemidlands-tickets-27322918585">Tickets</a>
+        </div>
+      </div>
+
         <section id="hero">
             <div class="overlay"></div>
             <div class="dot-back"></div>
@@ -281,5 +293,21 @@
             });
         });
     </script>
+
+    <script>
+    $('.nav-mobile').on('click', function(){
+       $('.nav-mobile-content-container').css({
+           maxHeight: '100%',
+           height: '100%',
+           opacity: 1
+       })
+    });
+    $('#mobile-close').on('click', function(){
+        $('.nav-mobile-content-container').css({
+            opacity: 0,
+            maxHeight: '0px'
+        });
+    });
+</script>
     </body>
 </html>
