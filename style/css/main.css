@@ -358,6 +358,8 @@ a {
   #sponsors .sponsors-list {
     text-align: center;
     padding-bottom: 80px; }
+    #sponsors .sponsors-list .gold .sponsor-icons {
+      width: 50% !important; }
     #sponsors .sponsors-list h2 {
       font-size: 30px;
       display: block;
@@ -378,8 +380,6 @@ a {
         margin: 20px; }
         #sponsors .sponsors-list .gold .sponsor-icons img, #sponsors .sponsors-list .silver .sponsor-icons img, #sponsors .sponsors-list .bronze .sponsor-icons img, #sponsors .sponsors-list .partner .sponsor-icons img {
           width: 100%; }
-        #sponsors .sponsors-list .gold .sponsor-icons #bcs, #sponsors .sponsors-list .silver .sponsor-icons #bcs, #sponsors .sponsors-list .bronze .sponsor-icons #bcs, #sponsors .sponsors-list .partner .sponsor-icons #bcs {
-          width: 50%; }
   #sponsors #sponsor-slit-top {
     width: 100%;
     height: 130px;
@@ -412,14 +412,8 @@ a {
     color: white; }
 
 @media screen and (max-width: 750px) {
-  #bcs {
-    width: 60% !important; }
-
   .sponsor-icons {
     width: 50% !important; } }
-@media screen and (max-width: 500px) {
-  #bcs {
-    width: 80% !important; } }
 #team {
   text-align: left;
   background-color: #1f1f1f;

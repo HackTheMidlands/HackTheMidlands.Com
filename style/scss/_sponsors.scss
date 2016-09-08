@@ -30,6 +30,9 @@
   .sponsors-list {
     text-align: center;
     padding-bottom: 80px;
+    .gold .sponsor-icons{
+      width: 50% !important;
+    }
     h2 {
       font-size: 30px;
       display: block;
@@ -53,9 +56,6 @@
         margin: 20px;
         img{
           width: 100%;
-        }
-        #bcs{
-          width: 50%;
         }
       }
     }
@@ -98,16 +98,16 @@
 }
 
 @media screen and (max-width: 750px){
-  #bcs{
-    width: 60% !important;
-  }
+  //#bcs{
+  //  width: 60% !important;
+  //}
   .sponsor-icons{
     width: 50% !important;
   }
 }
 
-@media screen and (max-width: 500px){
-  #bcs{
-    width: 80% !important;
-  }
-}
+//@media screen and (max-width: 500px){
+//  #bcs{
+//    width: 80% !important;
+//  }
+//}
