@@ -314,7 +314,7 @@ a {
     margin: 100px; }
     #event-countdown .countdown #countdown {
       letter-spacing: 15px;
-      font-family: 'ingra, Arial';
+      font-family: 'ingra', Arial;
       font-size: 60px;
       font-weight: 400; }
     #event-countdown .countdown h2 {
@@ -360,6 +360,8 @@ a {
     padding-bottom: 80px; }
     #sponsors .sponsors-list .gold .sponsor-icons {
       width: 50% !important; }
+    #sponsors .sponsors-list .silver .sponsor-icons {
+      width: 50%; }
     #sponsors .sponsors-list h2 {
       font-size: 30px;
       display: block;
@@ -414,6 +416,9 @@ a {
 @media screen and (max-width: 750px) {
   .sponsor-icons {
     width: 50% !important; } }
+@media screen and (max-width: 700px) {
+  .silver .sponsor-icons {
+    width: 80% !important; } }
 #team {
   text-align: left;
   background-color: #1f1f1f;
