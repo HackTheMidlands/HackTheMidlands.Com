@@ -326,5 +326,10 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%); }
+  #submission h1 {
+    margin: 60px 0px;
+    text-align: center;
+    color: white;
+    font-size: 50px; }
 
 /*# sourceMappingURL=event-info-main.css.map */
