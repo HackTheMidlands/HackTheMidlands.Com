@@ -1,0 +1,176 @@
+<html>
+<head>
+    <!--Stylesheets-->
+
+    <title>Hack The Midlands</title>
+    <link type="text/css" rel="stylesheet" href="./style/css/event-info-main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="http://hackthemidlands.com/images/hackthemidlands-facebook.jpg" />
+    <meta property="og:url" content="http://www.hackthemidlands.com" />
+    <script src="https://use.typekit.net/dme1ptj.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!--Timetable-->
+    <link rel="stylesheet" href="./style/css/timetablejs.css">
+
+    <script src="./style/js/timetable.min.js"></script>
+</head>
+
+<body>
+
+    <section id="header">
+        <div class="overlay"></div>
+        <div class="navigation">
+            <div class="nav-left">
+                <img src="./images/htmlogo.png"/>
+                <!-- <h1>HTM</h1> -->
+            </div>
+            <div class="nav-right">
+                <div class="nav-right-content">
+                    <a href="#event-info">Event Info</a>
+                    <a href="#sponsors">Sponsors</a>
+                    <a href="#team">Team</a>
+                    <a href="https://www.eventbrite.co.uk/e/hackthemidlands-tickets-27322918585">Tickets</a>
+                    <div class="nav-mobile"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header-title">
+            <h1>Event information</h1>
+            <h4>Hack the midlands</h4>
+            <a href="#navigation"><button class="button-white">Browse</button></a>
+        </div>
+    </section>
+
+    <section id="navigation">
+        <div class="container">
+            <ul>
+               <a href="#sponsor-challenges"><li>
+                   <div class="nav-icon"><img src="images/icons/sponsors.svg"/></div>
+                   <h4>Sponsors</h4>
+               </li></a>
+                <a href="#schedule"><li>
+                    <div class="nav-icon"><img src="images/icons/calendar.svg"/></div>
+                    <h4>Schedule</h4>
+                </li></a>
+                <a href="#submission"><li>
+                    <div class="nav-icon"><img src="images/icons/upload.svg"/></div>
+                    <h4>Submissions</h4>
+                </li></a>
+            </ul>
+        </div>
+    </section>
+
+    <!--Sponsor Challenges-->
+
+    <section id="sponsor-challenges">
+        <div class="container">
+            <h2>Sponsor Challenges</h2>
+            <hr/>
+            <div class="sponsors-challenges">
+                <div class="sponsor-item" id="majestic">
+                    <div class="sponsor-item-left">
+                        <img src="images/sponsors/majestic.png" alt="Majestic"/>
+                    </div>
+                    <div class="sponsor-item-right">
+                        <div class="sponsor-item-right-content">
+                            <h3>Challenge Title</h3>
+                            <p>We challenge you to use the most creative use of our API to extract some sick data from the web!</p>
+                            <a href=""><button class="button-black">Get API key</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sponsor-item" id="majestic">
+                <div class="sponsor-item-left">
+                    <img src="images/sponsors/majestic.png" alt="Majestic"/>
+                </div>
+                <div class="sponsor-item-right">
+                    <div class="sponsor-item-right-content">
+                        <h3>Challenge Title</h3>
+                        <p>We challenge you to use the most creative use of our API to extract some sick data from the web!</p>
+                        <a href=""><button class="button-black">Get API key</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="sponsor-item" id="majestic">
+                <div class="sponsor-item-left">
+                    <img src="images/sponsors/majestic.png" alt="Majestic"/>
+                </div>
+                <div class="sponsor-item-right">
+                    <div class="sponsor-item-right-content">
+                        <h3>Challenge Title</h3>
+                        <p>We challenge you to use the most creative use of our API to extract some sick data from the web!</p>
+                        <a href=""><button class="button-black">Get API key</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <div class="container">
+            <h2>Schedule</h2>
+            <hr/>
+            <h3>Saturday</h3>
+            <div class="timetable"></div>
+            <h3>Sunday</h3>
+            <div class="timetable2"></div>
+            <h4>Coming Soon...!</h4>
+        </div>
+    </section>
+
+    <section id="submission">
+        <div class="container">
+            <h2>Submissions</h2>
+            <hr/>
+            <a href="http://hackthemidlands.devpost.com/"><img src="http://devpost2.assetspost.com/assets/reimagine2/devpost-logo-646bdf6ac6663230947a952f8d354cad.svg" alt="devpost"/></a>
+            <h3>All submissions can be uploaded to <a href="http://hackthemidlands.devpost.com/">Devpost</a> where we
+                shall judge them and award winnders. If you have not already signed up to <strong>Devpost</strong> then
+                make sure you do it <strong>NOW!</strong></h3>
+        </div>
+    </section>
+
+    <script>
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            var timetable = new Timetable();
+            timetable.setScope(9, 23);
+            timetable.addLocations(['Main Hall', 'Food Table', 'Entertainment']);
+            //Main Hall
+            timetable.addEvent('Doors Open', 'Main Hall', new Date(2016,10,1,9,30), new Date(2016,10,1,10,00));
+            timetable.addEvent('Welcome Presentation', 'Main Hall', new Date(2016,10,1,11,00), new Date(2016,10,1,12,00));
+            timetable.addEvent('Hacking!', 'Main Hall', new Date(2016,10,1,12,00), new Date(2016,10,1,23,00));
+            //Food Table
+            timetable.addEvent('Lunch', 'Food Table', new Date(2016,10,1,13,00), new Date(2016,10,1,14,00));
+            timetable.addEvent('Dinner', 'Food Table', new Date(2016,10,1,19,00), new Date(2016,10,1,20,00));
+            //Entertainment
+            timetable.addEvent('Meet & Greet + Idea Creation', 'Entertainment', new Date(2016,10,1,12,00), new Date(2016,10,1,14,00));
+            timetable.addEvent('Code In The Dark', 'Entertainment', new Date(2016,10,1,20,30), new Date(2016,10,1,22,00));
+            timetable.addEvent('Werewolf', 'Entertainment', new Date(2016,10,1,22,00), new Date(2016,10,1,23,00));
+
+
+            //Render Timetable
+            var renderer = new Timetable.Renderer(timetable);
+            renderer.draw('.timetable'); // any css selector
+        });
+    </script>
+</body>
+</html>
