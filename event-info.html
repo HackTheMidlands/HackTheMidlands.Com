@@ -10,6 +10,7 @@
     <script src="https://use.typekit.net/dme1ptj.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
 
     <!--Timetable-->
     <link rel="stylesheet" href="./style/css/timetablejs.css">
@@ -18,6 +19,18 @@
 </head>
 
 <body>
+    <div class="nav-mobile-content-container">
+        <div id="mobile-close">
+            <h1 id="mobile-close">X</h1>
+        </div>
+        <div class="nav-mobile-content">
+            <a href="#event-info">Event Info</a>
+            <a href="#sponsors">Sponsors</a>
+            <a href="#team">Team</a>
+            <a href="https://www.eventbrite.co.uk/e/hackthemidlands-tickets-27322918585">Tickets</a>
+            <a href="event-info.html">Event Information</a>
+        </div>
+    </div>
 
     <section id="header">
         <div class="overlay"></div>
@@ -32,6 +45,7 @@
                     <a href="#sponsors">Sponsors</a>
                     <a href="#team">Team</a>
                     <a href="https://www.eventbrite.co.uk/e/hackthemidlands-tickets-27322918585">Tickets</a>
+                    <a href="event-info.html">Event Information</a>
                     <div class="nav-mobile"></div>
                 </div>
             </div>
@@ -45,6 +59,11 @@
 
     <section id="navigation">
         <div class="container">
+            <div class="nav-text">
+                <h1>You have:</h1>
+                <div id="countdown"></div>
+                <h1>left</h1>
+            </div>
             <ul>
                <a href="#sponsor-challenges"><li>
                    <div class="nav-icon"><img src="images/icons/sponsors.svg"/></div>
@@ -172,6 +191,30 @@
             var renderer = new Timetable.Renderer(timetable);
             renderer.draw('.timetable'); // any css selector
         });
+    </script>
+
+    <script>
+        $('.nav-mobile').on('click', function(){
+            $('.nav-mobile-content-container').css({
+                maxHeight: '100%',
+                height: '100%',
+                opacity: 1
+            })
+        });
+        $('#mobile-close').on('click', function(){
+            $('.nav-mobile-content-container').css({
+                opacity: 0,
+                maxHeight: '0px'
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $("#countdown")
+                .countdown("2016/10/02", function(event) {
+                    $(this).text(
+                            event.strftime('%D %H:%M:%S')
+                    );
+                });
     </script>
 </body>
 </html>

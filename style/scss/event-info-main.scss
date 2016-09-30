@@ -116,6 +116,16 @@ a{
 button{
   cursor: pointer;
 }
+/*Without Event info 550px width */
+@media screen and (max-width: 720px){
+  .nav-mobile{
+    visibility: visible !important;
+    display: inline-block !important;
+  }
+  .nav-right-content a{
+    display: none !important;
+  }
+}
 
 /* IMPORTS */
 @import "event-info";

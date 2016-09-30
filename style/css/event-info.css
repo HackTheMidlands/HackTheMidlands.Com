@@ -87,6 +87,21 @@ body {
 #navigation {
   height: auto;
   padding: 40px 0px; }
+  #navigation .nav-text {
+    padding: 30px 0px; }
+    #navigation .nav-text h1 {
+      color: white;
+      text-align: center;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 40px; }
+    #navigation .nav-text #countdown {
+      text-align: center;
+      color: white;
+      font-family: 'ingra', sans-serif;
+      font-size: 60px;
+      letter-spacing: 6px; }
   #navigation ul {
     width: 100%;
     text-align: center;
