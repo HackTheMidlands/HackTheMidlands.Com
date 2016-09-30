@@ -111,6 +111,12 @@ body{
     margin: -30px auto;
     list-style-type: none;
     padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    a{
+      width: 30%;
+    }
     a h4{
       color: white;
       text-decoration: none;
@@ -122,7 +128,6 @@ body{
     li{
       display: inline-block;
       margin: 10% 0px;
-      width: 30%;
       .nav-icon{
         width: 120px;
         height: 120px;
@@ -232,6 +237,15 @@ body{
     .row-heading{
       color: black;
     }
+    .time-entry{
+      background-color: #288aff;
+      border: 1px solid #288aff;
+      cursor: pointer;
+    }
+    .time-entry:hover{
+      background-color: #346dff;
+      border: 1px solid #346dff;
+    }
   }
 }
 
@@ -270,5 +284,64 @@ body{
     text-align: center;
     color: white;
     font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  #submission{
+    img{
+      width: 50% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  #navigation{
+    ul{
+      a{
+        width: 50% !important;
+      }
+    }
+  }
+  #header{
+    .header-title{
+      h1{
+        font-size: 35px !important;
+      }
+      h4{
+        font-size: 20px !important;
+        line-height: 20px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .sponsor-item{
+    .sponsor-item-left, .sponsor-item-right{
+      display: block !important;
+      width: 100% !important;
+    }
+    .sponsor-item-left{
+      border-radius: 7px 7px 0px 0px !important;
+    }
+    .sponsor-item-right{
+      margin-left: 0px !important;
+      border-radius: 0px 0px 7px 7px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 410px){
+  #header{
+    .header-title{
+      h1{
+        font-size: 30px !important;
+      }
+      h4{
+        font-size: 15px !important;
+        line-height: 20px !important;
+      }
+    }
   }
 }
