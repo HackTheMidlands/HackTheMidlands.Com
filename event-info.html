@@ -10,7 +10,6 @@
     <script src="https://use.typekit.net/dme1ptj.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
 
     <!--Timetable-->
     <link rel="stylesheet" href="./style/css/timetablejs.css">
@@ -209,12 +208,35 @@
         });
     </script>
     <script type="text/javascript">
-        $("#countdown")
-                .countdown("2016/10/02", function(event) {
-                    $(this).text(
-                            event.strftime('%D %H:%M:%S')
-                    );
-                });
+        function getTimeRemaining(endtime){
+            var t = Date.parse(endtime) - Date.parse(new Date());
+            var seconds = Math.floor( (t/1000) % 60 );
+            var minutes = Math.floor( (t/1000/60) % 60 );
+            var hours = Math.floor( (t/(1000*60*60)) % 24 );
+            var days = Math.floor( t/(1000*60*60*24) );
+            return {
+                'total': t,
+                'days': days,
+                'hours': hours,
+                'minutes': minutes,
+                'seconds': seconds
+            };
+        }
+
+        function initializeClock(id, endtime){
+            var clock = document.getElementById(id);
+            var timeinterval = setInterval(function(){
+                var t = getTimeRemaining(endtime);
+                clock.innerHTML = '<div id="days">' + t.days + '<h3>Days</h3></div>' + '<div id="hours">' + t.hours + '<h3>Hours</h3></div>' + '<div id="minutes">' + t.minutes + '<h3>Minutes</h3></div>' + '<div id="minutes">' + t.seconds + '<h3>Seconds</h3></div>';
+                if(t.total<=0){
+                    clearInterval(timeinterval);
+                }
+            },1000);
+        }
+
+        var deadline = 'October 02 2016 12:00:00 GMT+0100';
+        initializeClock('countdown', deadline);
+
     </script>
 </body>
 </html>

@@ -121,6 +121,16 @@ body{
       font-family: 'ingra', sans-serif;
       font-size: 60px;
       letter-spacing: 6px;
+      #days ,#hours, #minutes, #seconds{
+        margin: 30px 0px;
+        display: inline-block;
+        width: 20%;
+        h3{
+          font-size: 15px;
+          font-weight: 300;
+          leter-spacing: 0px;
+        }
+      }
     }
   }
   ul{

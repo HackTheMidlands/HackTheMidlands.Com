@@ -102,6 +102,14 @@ body {
       font-family: 'ingra', sans-serif;
       font-size: 60px;
       letter-spacing: 6px; }
+      #navigation .nav-text #countdown #days, #navigation .nav-text #countdown #hours, #navigation .nav-text #countdown #minutes, #navigation .nav-text #countdown #seconds {
+        margin: 30px 0px;
+        display: inline-block;
+        width: 20%; }
+        #navigation .nav-text #countdown #days h3, #navigation .nav-text #countdown #hours h3, #navigation .nav-text #countdown #minutes h3, #navigation .nav-text #countdown #seconds h3 {
+          font-size: 15px;
+          font-weight: 300;
+          leter-spacing: 0px; }
   #navigation ul {
     width: 100%;
     text-align: center;
