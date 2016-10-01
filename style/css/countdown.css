@@ -586,6 +586,9 @@ body {
       font-weight: 300;
       letter-spacing: 3px;
       text-transform: uppercase; }
+    #main-body .countdown-container h3 {
+      font-size: 30px;
+      font-weight: 300; }
     #main-body .countdown-container #countdown {
       text-align: center;
       color: white;
