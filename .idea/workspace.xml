@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29b559e5-0ce8-42cd-99a1-f57128e78ccd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/.sass-cache/141ee54a4b227549f2e8b4ccc8360db8e98a6725/event-info.scssc" afterPath="$PROJECT_DIR$/style/.sass-cache/141ee54a4b227549f2e8b4ccc8360db8e98a6725/event-info.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event-info.html" afterPath="$PROJECT_DIR$/event-info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/event-info-main.css" afterPath="$PROJECT_DIR$/style/css/event-info-main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/event-info-main.css.map" afterPath="$PROJECT_DIR$/style/css/event-info-main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/event-info.css" afterPath="$PROJECT_DIR$/style/css/event-info.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/event-info.css.map" afterPath="$PROJECT_DIR$/style/css/event-info.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/scss/event-info.scss" afterPath="$PROJECT_DIR$/style/scss/event-info.scss" />
     </list>
     <ignored path="HackTheMidlands.Com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,8 +39,8 @@
       <file leaf-file-name="event-info.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/event-info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1470">
-              <caret line="98" column="97" selection-start-line="98" selection-start-column="97" selection-end-line="98" selection-end-column="97" />
+            <state relative-caret-position="330">
+              <caret line="131" column="22" selection-start-line="120" selection-start-column="16" selection-end-line="131" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#a#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -253,12 +247,12 @@
       <workItem from="1475243397705" duration="1628000" />
       <workItem from="1475252728340" duration="2228000" />
       <workItem from="1475259860913" duration="7699000" />
-      <workItem from="1475307158538" duration="6980000" />
+      <workItem from="1475307158538" duration="7122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23244000" />
+    <option name="totallyTimeSpent" value="23386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
@@ -644,8 +638,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/event-info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="98" column="97" selection-start-line="98" selection-start-column="97" selection-end-line="98" selection-end-column="97" />
+        <state relative-caret-position="330">
+          <caret line="131" column="22" selection-start-line="120" selection-start-column="16" selection-end-line="131" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#button#0;n#a#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
