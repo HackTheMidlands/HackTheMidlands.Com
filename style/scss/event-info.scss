@@ -233,6 +233,18 @@ body{
         font-weight: 300;
         margin: 0px 0px 10px 0px;
       }
+      a{
+        text-decoration: none;
+        color: orange;
+        font-weight: 300;
+      }
+      button{
+        margin: 10px 0px;
+      }
+      a:visited{
+        color: dodgerblue;
+        font-weight: 300;
+      }
     }
   }
 }
@@ -372,4 +384,11 @@ body{
       }
     }
   }
+}
+
+#lightboxes{
+  display: none;
+}
+.featherlight-content{
+  font-family: 'ingra', sans-serif;
 }

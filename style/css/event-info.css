@@ -195,6 +195,15 @@ body {
       #sponsor-challenges .sponsor-item-right .sponsor-item-right-content p {
         font-weight: 300;
         margin: 0px 0px 10px 0px; }
+      #sponsor-challenges .sponsor-item-right .sponsor-item-right-content a {
+        text-decoration: none;
+        color: orange;
+        font-weight: 300; }
+      #sponsor-challenges .sponsor-item-right .sponsor-item-right-content button {
+        margin: 10px 0px; }
+      #sponsor-challenges .sponsor-item-right .sponsor-item-right-content a:visited {
+        color: dodgerblue;
+        font-weight: 300; }
 
 #schedule {
   padding: 40px 0px; }
@@ -286,5 +295,10 @@ body {
   #header .header-title h4 {
     font-size: 15px !important;
     line-height: 20px !important; } }
+#lightboxes {
+  display: none; }
+
+.featherlight-content {
+  font-family: 'ingra', sans-serif; }
 
 /*# sourceMappingURL=event-info.css.map */
